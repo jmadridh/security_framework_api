@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.inchcape</groupId>
-	<artifactId>security_framework_api</artifactId>
+	<groupId>com.inchcape.framework</groupId>
+	<artifactId>security</artifactId>
     <version>1.0.0</version>
     <packaging>mule</packaging>
 	<name>Mule Security Framework Application</name>
