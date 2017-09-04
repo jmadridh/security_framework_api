@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.inchcape.framework</groupId>
 	<artifactId>security</artifactId>
-    <version>1.0.0</version>
-    <packaging>mule</packaging>
-	<name>Mule Security Framework Application</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+	<name>InchcapeSecurityFrameworkApplication</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,6 +28,12 @@
 				<extensions>true</extensions>
 				<configuration>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
+                    <inclusions>
+                    	<inclusion>
+                            <groupId>com.mulesoft.security</groupId>
+                            <artifactId>mule-module-security-property-placeholder</artifactId>
+                        </inclusion>
+                    </inclusions>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -47,6 +53,7 @@
 									<directory>src/main/app/</directory>
 								</resource>
 							</resources>
+							
 						</configuration>
 					</execution>
 				</executions>
