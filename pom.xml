@@ -15,6 +15,8 @@
 
 		<mule.version>3.8.5</mule.version>
     	<mule.tools.version>1.2</mule.tools.version>
+    	<!-- Mule Module Security Property Placeholder -->
+		<mule.security.placeholder.version>1.6.5</mule.security.placeholder.version>
 	</properties>
 
 	<build>
@@ -43,12 +45,6 @@
 							<resources>
 								<resource>
 									<directory>src/main/app/</directory>
-								</resource>
-								<resource>
-									<directory>src/main/api/</directory>
-								</resource>
-								<resource>
-									<directory>mappings/</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -118,6 +114,14 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- security property placeholder -->
+		<dependency>
+			<groupId>com.mulesoft.security</groupId>
+			<artifactId>mule-module-security-property-placeholder</artifactId>
+			<version>${mule.security.placeholder.version}</version>
+		</dependency>
+		
 		<!-- for testing -->
 		<dependency>
 			<groupId>org.mule.tests</groupId>
