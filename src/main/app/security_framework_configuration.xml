@@ -11,8 +11,8 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 
 	<secure-property-placeholder:config
 		name="securePropertyPlaceholder" key="${secure.key}"
-		location="${env}.properties" doc:name="Secure Property Placeholder"
-		doc:description="Secure Property Placeholder" />
+		location="${env}.properties,common.properties" doc:name="Secure Property Placeholder"
+		doc:description="Secure Property Placeholder" ignoreResourceNotFound="true"/>
 
 
 </mule>
